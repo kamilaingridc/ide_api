@@ -1,0 +1,16 @@
+,
+    6: {
+        "nome": "Android Studio",
+        "versao": 4.2,
+        "linguagem": "Oficial para desenvolvimento de aplicativos Android."
+    },
+    7: {
+        "nome": "NetBeans",
+        "versao": 12.3,
+        "linguagem": "Código aberto que suporta várias linguagens, incluindo Java, PHP, C/C++, e HTML5/JavaScript."
+    },
+    8: {
+        "nome": "Sublime Text",
+        "versao": 4114,
+        "linguagem": "Altamente personalizável."
+    }
