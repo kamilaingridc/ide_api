@@ -1,0 +1,15 @@
+Ambos os métodos HTTP PUT e PATCH são usados para atualizar recursos em um servidor web, mas diferem em como eles tratam a atualização.
+
+PUT:
+O método PUT é usado para substituir um recurso por completo.
+Em APIs RESTful, o recurso a ser atualizado é especificado no URL.
+No exemplo fornecido, o método PUT substitui completamente o recurso representado por ide_id com o novo recurso fornecido na solicitação. Ou seja, ele espera que o cliente envie todas as informações do recurso, e ele então substitui completamente o recurso existente com essas informações.
+Se o recurso com o ide_id especificado já existe no servidor, ele é substituído pelo novo recurso enviado na solicitação.
+No final, o servidor retorna o recurso atualizado.
+PATCH:
+O método PATCH é usado para atualizar parcialmente um recurso, ou seja, atualizar apenas os campos específicos do recurso.
+Assim como no PUT, o recurso a ser atualizado é especificado no URL.
+No exemplo fornecido, o método PATCH atualiza o recurso representado por ide_id com as informações fornecidas na solicitação, mas ele apenas atualiza os campos fornecidos na solicitação, em vez de substituir completamente o recurso.
+Se o recurso com o ide_id especificado já existe no servidor, ele é atualizado apenas com os campos fornecidos na solicitação.
+No final, o servidor retorna o recurso atualizado.
+Em resumo, PUT é usado para substituir completamente um recurso, enquanto PATCH é usado para atualizar parcialmente um recurso, alterando apenas os campos específicos fornecidos na solicitação.

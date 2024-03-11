@@ -1,7 +1,6 @@
-from fastapi import FastAPI  
+from fastapi import FastAPI, HTTPException, status, Response, Path
 from typing import Optional
 from modelo import IDES
-from fastapi import HTTPException, status, Response, Path
 
 app = FastAPI()
 
@@ -9,7 +8,8 @@ ides = {
     1: {
         "nome": "Visual Studio (VS Code)",
         "versao": 1.87,
-        "linguagem": "C#, Visual Basic.NET, C++, F#, JavaScript, TypeScript, Python, entre outros."
+        "linguagem": "C#, Visual Basic.NET, C++, F#, JavaScript, TypeScript, Python, entre outros.",
+        "image:": "C:/Users/50252782879/Desktop/ide_api/images/vsCode_.png"
     },
     2: {
         "nome": "Eclipse",
@@ -75,17 +75,16 @@ async def delete_ide(ide_id: int):
         return Response(status_code=status.HTTP_204_NO_CONTENT)
     else:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f'dont have an ide w the id {ide_id}.')
-    
+
 # PATCH - mesmo fim que a put
 # substitui um pedaço
 @app.patch('/ides/{ide_id}')
-async def patch_ide(ide_id: int):
+async def patch_ide(ide_id: int, ide: IDES):
     if ide_id in ides:
-        del ides[ide_id]
-        return Response(status_code=status.HTTP_204_NO_CONTENT)
+        ides[ide_id].update(ide)
+        return ides[ide_id]
     else:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f'dont have an ide w the id {ide_id}.')
-    
 
 if __name__ == "__main__":
     import uvicorn
