@@ -9,26 +9,31 @@ ides = {
         "nome": "Visual Studio (VS Code)",
         "versao": 1.87,
         "linguagem": "C#, Visual Basic.NET, C++, F#, JavaScript, TypeScript, Python, entre outros.",
+        "imagem": "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg"
     },
     "2": {
         "nome": "Eclipse",
         "versao": 2019.09,
-        "linguagem": "Popularmente usada para desenvolvimento Java, mas também suporta outras linguagens através de plug-ins, como C/C++, Python, PHP e Ruby."
+        "linguagem": "Popularmente usada para desenvolvimento Java, mas também suporta outras linguagens através de plug-ins, como C/C++, Python, PHP e Ruby.",
+        "imagem": "https://www.perforce.com/sites/default/files/image/2017-05/image-body-integrations-eclipse_0.png"
     },
     "3": {
         "nome": "IntelliJ IDEA",
         "versao": 2023.3,
-        "linguagem": "Poderosa para desenvolvimento Java, mas também suporta outras linguagens como Kotlin, Groovy, Scala e JavaScript."
+        "linguagem": "Poderosa para desenvolvimento Java, mas também suporta outras linguagens como Kotlin, Groovy, Scala e JavaScript.",
+        "imagem": "https://logowik.com/content/uploads/images/jetbrains-intellij-idea6941.jpg"
     },
     "4": {
         "nome": "PyCharm",
         "versao": 2023.3,
-        "linguagem": "Específica para Python, com suporte para frameworks populares como Django e Flask, além de outras tecnologias relacionadas a Python, como Jupyter Notebooks."
+        "linguagem": "Específica para Python, com suporte para frameworks populares como Django e Flask, além de outras tecnologias relacionadas a Python, como Jupyter Notebooks.",
+        "imagem": "https://logowik.com/content/uploads/images/pycharm6005.logowik.com.webp"
     },
     "5": {
         "nome": "Xcode",
         "versao": 15,
-        "linguagem": "Desenvolvimento de aplicativos para iOS, macOS, watchOS e tvOS, principalmente usando Swift e Objective-C."
+        "linguagem": "Desenvolvimento de aplicativos para iOS, macOS, watchOS e tvOS, principalmente usando Swift e Objective-C.",
+        "imagem": "https://upload.wikimedia.org/wikipedia/en/5/56/Xcode_14_icon.png"
     }
 }
 

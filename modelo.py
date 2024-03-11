@@ -1,4 +1,3 @@
-from typing import Optional
 from pydantic import BaseModel
 
 class IDES(BaseModel):
@@ -6,4 +5,5 @@ class IDES(BaseModel):
     nome: str | None = None
     versao: float | None = None
     linguagem: str | None = None
+    imagem: str | None = None
     
